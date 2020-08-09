@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dojosurvey</title>
+    {% load static %}
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>form</h1>
+        <p>Name:{{ result.session.user_name }}</p>
+        <p>location:{{ result.session.location }}</p>
+        <p>language:{{ result.session.language }}</p>
+        <p>comment:{{ result.session.comment</p>
+        <a href="/" class="btn btn-primary">Go Back</a>
+
+    </div>
+    
+</body>
+</html>
